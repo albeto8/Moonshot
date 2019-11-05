@@ -17,6 +17,7 @@
 		F8B6D3002371D20C007BBF95 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = F8B6D2FE2371D20C007BBF95 /* missions.json */; };
 		F8B6D3022371D318007BBF95 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6D3012371D318007BBF95 /* Astronaut.swift */; };
 		F8B6D3042371D351007BBF95 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6D3032371D351007BBF95 /* Bundle-Decodable.swift */; };
+		F8B6D3062371E77C007BBF95 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6D3052371E77C007BBF95 /* Mission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F8B6D2FE2371D20C007BBF95 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		F8B6D3012371D318007BBF95 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
 		F8B6D3032371D351007BBF95 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		F8B6D3052371E77C007BBF95 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				F8B6D2F42371D13C007BBF95 /* LaunchScreen.storyboard */,
 				F8B6D2F72371D13C007BBF95 /* Info.plist */,
 				F8B6D2F12371D13C007BBF95 /* Preview Content */,
+				F8B6D3052371E77C007BBF95 /* Mission.swift */,
 			);
 			path = Moonshot;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B6D3062371E77C007BBF95 /* Mission.swift in Sources */,
 				F8B6D2EA2371D13B007BBF95 /* AppDelegate.swift in Sources */,
 				F8B6D2EC2371D13B007BBF95 /* SceneDelegate.swift in Sources */,
 				F8B6D3042371D351007BBF95 /* Bundle-Decodable.swift in Sources */,
