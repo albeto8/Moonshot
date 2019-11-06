@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8212C7D23732A6700122C66 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8212C7C23732A6700122C66 /* MissionView.swift */; };
 		F8B6D2EA2371D13B007BBF95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6D2E92371D13B007BBF95 /* AppDelegate.swift */; };
 		F8B6D2EC2371D13B007BBF95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6D2EB2371D13B007BBF95 /* SceneDelegate.swift */; };
 		F8B6D2EE2371D13B007BBF95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6D2ED2371D13B007BBF95 /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8212C7C23732A6700122C66 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 		F8B6D2E62371D13B007BBF95 /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B6D2E92371D13B007BBF95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8B6D2EB2371D13B007BBF95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,11 +75,12 @@
 				F8B6D2ED2371D13B007BBF95 /* ContentView.swift */,
 				F8B6D3012371D318007BBF95 /* Astronaut.swift */,
 				F8B6D3032371D351007BBF95 /* Bundle-Decodable.swift */,
+				F8B6D3052371E77C007BBF95 /* Mission.swift */,
+				F8212C7C23732A6700122C66 /* MissionView.swift */,
 				F8B6D2EF2371D13C007BBF95 /* Assets.xcassets */,
 				F8B6D2F42371D13C007BBF95 /* LaunchScreen.storyboard */,
 				F8B6D2F72371D13C007BBF95 /* Info.plist */,
 				F8B6D2F12371D13C007BBF95 /* Preview Content */,
-				F8B6D3052371E77C007BBF95 /* Mission.swift */,
 			);
 			path = Moonshot;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8212C7D23732A6700122C66 /* MissionView.swift in Sources */,
 				F8B6D3062371E77C007BBF95 /* Mission.swift in Sources */,
 				F8B6D2EA2371D13B007BBF95 /* AppDelegate.swift in Sources */,
 				F8B6D2EC2371D13B007BBF95 /* SceneDelegate.swift in Sources */,
