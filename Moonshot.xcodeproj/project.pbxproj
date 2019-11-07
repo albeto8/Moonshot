@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F8212C7D23732A6700122C66 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8212C7C23732A6700122C66 /* MissionView.swift */; };
 		F89EC5AF237334E9001203B2 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89EC5AE237334E9001203B2 /* AstronautView.swift */; };
+		F8A1CF062374915200653852 /* MissionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A1CF052374915200653852 /* MissionCell.swift */; };
 		F8B6D2EA2371D13B007BBF95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6D2E92371D13B007BBF95 /* AppDelegate.swift */; };
 		F8B6D2EC2371D13B007BBF95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6D2EB2371D13B007BBF95 /* SceneDelegate.swift */; };
 		F8B6D2EE2371D13B007BBF95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6D2ED2371D13B007BBF95 /* ContentView.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		F8212C7C23732A6700122C66 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 		F89EC5AE237334E9001203B2 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
+		F8A1CF052374915200653852 /* MissionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionCell.swift; sourceTree = "<group>"; };
 		F8B6D2E62371D13B007BBF95 /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B6D2E92371D13B007BBF95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8B6D2EB2371D13B007BBF95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F89FA6F723748A2B00F4A4EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8B6D3012371D318007BBF95 /* Astronaut.swift */,
+				F8B6D3052371E77C007BBF95 /* Mission.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F89FA6F823748A3D00F4A4EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F89EC5AE237334E9001203B2 /* AstronautView.swift */,
+				F8B6D2ED2371D13B007BBF95 /* ContentView.swift */,
+				F8212C7C23732A6700122C66 /* MissionView.swift */,
+				F8A1CF052374915200653852 /* MissionCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F8B6D2DD2371D13B007BBF95 = {
 			isa = PBXGroup;
 			children = (
@@ -70,16 +92,13 @@
 		F8B6D2E82371D13B007BBF95 /* Moonshot */ = {
 			isa = PBXGroup;
 			children = (
+				F89FA6F723748A2B00F4A4EC /* Model */,
+				F89FA6F823748A3D00F4A4EC /* View */,
 				F8B6D2FD2371D20C007BBF95 /* astronauts.json */,
 				F8B6D2FE2371D20C007BBF95 /* missions.json */,
 				F8B6D2E92371D13B007BBF95 /* AppDelegate.swift */,
 				F8B6D2EB2371D13B007BBF95 /* SceneDelegate.swift */,
-				F8B6D2ED2371D13B007BBF95 /* ContentView.swift */,
-				F8B6D3012371D318007BBF95 /* Astronaut.swift */,
-				F89EC5AE237334E9001203B2 /* AstronautView.swift */,
 				F8B6D3032371D351007BBF95 /* Bundle-Decodable.swift */,
-				F8B6D3052371E77C007BBF95 /* Mission.swift */,
-				F8212C7C23732A6700122C66 /* MissionView.swift */,
 				F8B6D2EF2371D13C007BBF95 /* Assets.xcassets */,
 				F8B6D2F42371D13C007BBF95 /* LaunchScreen.storyboard */,
 				F8B6D2F72371D13C007BBF95 /* Info.plist */,
@@ -170,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8212C7D23732A6700122C66 /* MissionView.swift in Sources */,
+				F8A1CF062374915200653852 /* MissionCell.swift in Sources */,
 				F8B6D3062371E77C007BBF95 /* Mission.swift in Sources */,
 				F89EC5AF237334E9001203B2 /* AstronautView.swift in Sources */,
 				F8B6D2EA2371D13B007BBF95 /* AppDelegate.swift in Sources */,
