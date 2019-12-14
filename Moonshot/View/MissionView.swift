@@ -38,13 +38,14 @@ struct MissionView: View {
         GeometryReader { geometry in
             ScrollView(.vertical) {
                 VStack {
-                    Image(self.mission.image)
+                    Image(decorative: self.mission.image)
                         .resizable()
                         .scaledToFit()
                         .frame(maxWidth: geometry.size.width * 0.7)
                         .padding(.top)
 
                   Text(self.mission.formattedLaunchDate)
+                    .accessibility(label: Text("Mission date was on: \(self.mission.formattedLaunchDate)"))
                     .padding()
 
                     Text(self.mission.description)
@@ -53,7 +54,7 @@ struct MissionView: View {
                   ForEach(self.astronauts, id: \.role) { crewMember in
                     NavigationLink(destination: AstronautView(astronaut: crewMember.astronaut)) {
                       HStack {
-                          Image(crewMember.astronaut.id)
+                         Image(decorative: crewMember.astronaut.id)
                               .resizable()
                               .frame(width: 83, height: 60)
                               .clipShape(Circle())
@@ -65,6 +66,8 @@ struct MissionView: View {
                               Text(crewMember.role)
                                   .foregroundColor(.secondary)
                           }
+                        .accessibilityElement(children: .ignore)
+                        .accessibility(label: Text("Astronaut name is \(crewMember.astronaut.name) his role was \(crewMember.role)"))
 
                           Spacer()
                       }

@@ -31,7 +31,7 @@ struct MissionCell: View {
 
     var body: some View {
       HStack {
-        Image(mission.image)
+        Image(decorative: mission.image)
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width: 44, height: 44)
@@ -41,6 +41,8 @@ struct MissionCell: View {
                 .font(.headline)
             Text(detailText)
         }
+        .accessibilityElement(children: .ignore)
+        .accessibility(label: Text("Mission \(mission.displayName) \(self.showLaunchDate ? "Mission date was on" : "Mission crew members were") \(detailText)"))
         Spacer()
       }
     }

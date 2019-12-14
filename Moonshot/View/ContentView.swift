@@ -22,7 +22,7 @@ struct ContentView: View {
           }
         }
       .navigationBarTitle("Moonshot")
-        .navigationBarItems(trailing: Button("Show") {
+        .navigationBarItems(trailing: Button("\(self.showLaunchDate ? "Show crew members" : "Show mission date")") {
           self.showLaunchDate.toggle()
         })
       }
