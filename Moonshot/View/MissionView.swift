@@ -17,6 +17,14 @@ struct MissionView: View {
 
   let mission: Mission
   let astronauts: [CrewMember]
+    
+    func renderScaleEffect(_ geoRect: CGRect, _ fullRect: CGRect) -> CGFloat {
+        let finalScale = geoRect.midY / fullRect.midY * 2
+        if finalScale < 0.8 {
+            return 0.8
+        }
+        return finalScale
+    }
 
   init(mission: Mission, astronauts: [Astronaut]) {
       self.mission = mission
@@ -38,12 +46,19 @@ struct MissionView: View {
         GeometryReader { geometry in
             ScrollView(.vertical) {
                 VStack {
-                    Image(decorative: self.mission.image)
+                    GeometryReader { geo in
+                        Image(decorative: self.mission.image)
                         .resizable()
                         .scaledToFit()
-                        .frame(maxWidth: geometry.size.width * 0.7)
                         .padding(.top)
-
+                            .frame(width: geo.size.width, height: geo.size.height)
+                            .scaleEffect(self.renderScaleEffect(geo.frame(in: .global), geometry.frame(in: .global)))
+                        .onTapGesture {
+                            print("Global geo center: maxY \(geo.frame(in: .global).maxY) minY \(geo.frame(in: .global).minY) midY: \(geo.frame(in: .global).midY)")
+                            print("Global geometry center: maxY \(geometry.frame(in: .global).maxY) minY \(geometry.frame(in: .global).minY) midY: \(geometry.frame(in: .global).midY)")
+                        }
+                    }
+                    .frame(width: geometry.size.width, height: geometry.size.height * 0.4)
                   Text(self.mission.formattedLaunchDate)
                     .accessibility(label: Text("Mission date was on: \(self.mission.formattedLaunchDate)"))
                     .padding()
